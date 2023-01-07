@@ -11,8 +11,8 @@ class Game:
     indexes_database = {"A1": 0, "A2": 1, "A3": 2, "B1": 3, "B2": 4, "B3": 5, "C1": 6, "C2": 7, "C3": 8}
     winning_combinations = (["A1", "A2", "A3"], ["B1", "B2", "B3"], ["C1", "C2", "C3"], ["A1", "B1", "C1"] , ["A2", "B2", "C2"], ["A3", "B3", "C3"], ["A1", "B2", "C3"], ["C1", "B2", "A3"])
 
-    def printer(cls, b):
-        print(f'\n"1" "2" "3"\n {b[0]} | {b[1]} | {b[2]} "A"\n-----------\n {b[3]} | {b[4]} | {b[5]} "B"\n-----------\n {b[6]} | {b[7]} | {b[8]} "C"\n')
+    def printer(cls, data):
+        print(f'\n"1" "2" "3"\n {data[0]} | {data[1]} | {data[2]} "A"\n-----------\n {data[3]} | {data[4]} | {data[5]} "B"\n-----------\n {data[6]} | {data[7]} | {data[8]} "C"\n')
 
 
     def x_step(cls):
